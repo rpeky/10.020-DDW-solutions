@@ -1,4 +1,4 @@
-
+#300422_peky
 #to illustrate the difference in operations, we will count the number of steps taken with a count variable
 
 def b_sort_v1(ls_unsorted):
@@ -105,12 +105,7 @@ def main():
     sample_scrambled_numbers2 = [82, 65, 93, 0, 60, 31, 99, 90, 31, 70, 1, 2, 12, 32, 15, 105, 107, 108]
     sample_scrambled_numbers3 = [82, 65, 93, 0, 60, 31, 99, 90, 31, 70, 1, 2, 12, 32, 15, 105, 107, 108]
     sample_scrambled_numbers4 = [82, 65, 93, 0, 60, 31, 99, 90, 31, 70, 1, 2, 12, 32, 15, 105, 107, 108]
-    fns = {
-        1: b_sort_v1,
-        2: b_sort_v2,
-        3: b_sort_v3,
-        4: b_sort_v4
-    }
+    
     solv1,stepsv1 = b_sort_v1(sample_scrambled_numbers1)
     print(solv1, "\nSteps taken to sort: {}".format(stepsv1))
     solv2,stepsv2 = b_sort_v2(sample_scrambled_numbers2)
