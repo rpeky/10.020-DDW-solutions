@@ -2,6 +2,7 @@
 #to illustrate the difference in operations, we will count the number of steps taken with a count variable
 
 def b_sort_v1(ls_unsorted):
+    #since the operations for swapping are the same throughout, we are counting the number of iterations needed to achieve the sort
     count = 0
     #iterate through unsorted list
     #to access next number, we want the index of the position to check
