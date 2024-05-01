@@ -62,7 +62,7 @@ class towers():
 #one disc moves at each time
 #larger disc cannot be placed on top of smaller disc
 def rec_towerofhanoi(n_disc, src, dest, aux):
-    #base case do final swap
+    #repeat until no more disc means all the disc have been shifted
     if n_disc>=1:
         rec_towerofhanoi(n_disc-1, src, aux, dest)
         dest.operation_add_block(src.operation_remove_block())
