@@ -1,0 +1,1 @@
+Its math... you can try adding a count to the functions before, but its probably better to understand what you're conting first

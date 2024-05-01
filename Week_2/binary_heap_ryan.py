@@ -48,6 +48,7 @@ def heapify_max_v1(arr, index):
         L_child = left_orphan(curr_pos)
         R_child = right_orphan(curr_pos)
         #find the index of larger child node to check if it is larger than current node value
+        #check if right child is a valid index
         #use ternary to check if left is larger else right, or do an if else statement
         if(R_child < len(arr)):
            fat_child = L_child if (arr[L_child] > arr[R_child]) else R_child
@@ -56,6 +57,7 @@ def heapify_max_v1(arr, index):
         #check if child is larger, if so swap
         if arr[fat_child] > arr[curr_pos]:
             arr[fat_child], arr[curr_pos] = arr[curr_pos], arr[fat_child]
+        #node will always shift down since we set the new position as the child
         curr_pos = fat_child
 
 #we can improve the algo by stopping early
@@ -88,16 +90,18 @@ def build_max_heap(arr):
     len_arr = len(arr)
     start_index = int(len_arr/2)-1
     #iterate through the tree upwards, max_heapify will check downwards for us, hence we can check the whole tree from this point 
+    #max heapify will automatically go downwards to adjust values after each time we go upwards
     for i in range(start_index,-1,-1):
         heapify_max_v2(arr, i)
 
 def main():
     test_tree = [1, 2, 8, 7, 14, 9, 3, 10, 4, 16]
-    build_max_heap(test_tree)
-    for i in range(len(test_tree)):
+    test_tree2 = [1,3,5,7,9,11,13,15,17,19,21]
+    build_max_heap(test_tree2)
+    for i in range(len(test_tree2)):
         print("Index {}".format(i))
-        print("Value {}".format(test_tree[i]))
-    print(test_tree)
+        print("Value {}".format(test_tree2[i]))
+    print(test_tree2)
 
 if __name__ == "__main__":
     main()
