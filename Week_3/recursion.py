@@ -73,7 +73,7 @@ def main():
     t_A = towers("A")
     t_B = towers("B")
     t_C = towers("C")
-    #add disc into source tower, size must go from largest to smallestfor i in range(3, -1, -1):
+    #add disc into source tower, size must go from largest to smallest
     discs = 5
     for i in range(discs, 0, -1):
         t_A.operation_add_block(i)
