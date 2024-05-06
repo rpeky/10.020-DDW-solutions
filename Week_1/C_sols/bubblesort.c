@@ -23,7 +23,10 @@ int main(int argc, char **argv){
 		ar[i-1]=strtol(argv[i],NULL,10);
 	bubblesort_optimised(ar,argc-1);
 	printf("Sorted: \n");
+	//for(int i=0;i<argc-1;++i)
+		//printf("%d\n",ar[i]);
 	for(int i=0;i<argc-1;++i)
-		printf("%d\n",ar[i]);
-	return 0;
+        printf("%d\t",ar[i]);
+    printf("\n");
+return 0;
 }
