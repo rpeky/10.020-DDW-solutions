@@ -43,7 +43,7 @@ def right_orphan(parent_idx):
 
 def heapify_max_v1(arr, index):
     curr_pos = index
-    while((left_orphan(curr_pos) < len(arr)) and swapped):
+    while((left_orphan(curr_pos) < len(arr))):
         #check if children nodes are in range
         L_child = left_orphan(curr_pos)
         R_child = right_orphan(curr_pos)
