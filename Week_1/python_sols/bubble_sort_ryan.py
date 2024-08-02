@@ -106,7 +106,7 @@ def main():
     sample_scrambled_numbers2 = [82, 65, 93, 0, 60, 31, 99, 90, 31, 70, 1, 2, 12, 32, 15, 105, 107, 108]
     sample_scrambled_numbers3 = [82, 65, 93, 0, 60, 31, 99, 90, 31, 70, 1, 2, 12, 32, 15, 105, 107, 108]
     sample_scrambled_numbers4 = [82, 65, 93, 0, 60, 31, 99, 90, 31, 70, 1, 2, 12, 32, 15, 105, 107, 108]
-    
+
     solv1,stepsv1 = b_sort_v1(sample_scrambled_numbers1)
     print(solv1, "\nSteps taken to sort: {}".format(stepsv1))
     solv2,stepsv2 = b_sort_v2(sample_scrambled_numbers2)
